@@ -1,0 +1,9 @@
+.vscode/
+build/
+output/
+
+*.o
+*.exe
+*.out
+
+twosum
