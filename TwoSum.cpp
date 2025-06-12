@@ -9,8 +9,10 @@ class Solution {
         std::vector<int> twoSum(std::vector<int> &nums, int target) {
             std::unordered_map<int, int> seen;
 
-            for (int i = 0; i < nums.size(); ++i) {
+            for (int i = 0; i < (int)nums.size(); ++i) {
+
                 int complement = target - nums[i];
+
                 if (seen.find(complement) != seen.end()) {
                     return {seen[complement], i};
                 }
@@ -19,6 +21,8 @@ class Solution {
             return {};
         }
 };
+
+
 
 int main(void){
     std::cout << std::endl;
